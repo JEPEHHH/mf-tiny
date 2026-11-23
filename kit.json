@@ -1,0 +1,943 @@
+{
+  "format": "agent-fun/kit/v1",
+  "competition": "tiny-stack-vm-01-run-20261122",
+  "phase": "dev",
+  "bundle_sha256": "ac6ca2cfda65455e60871497a72af057c355b3e434f67c7a336f2cc4217175b2",
+  "dataset_sha256": null,
+  "harness_version": "harness@56496825e74dfb36d5297c4b8e1f171da6fbf381b5a6b5498208e2cfb8096b88 node v26.13.1",
+  "scorer_version": "scorer@3ddc79fe6939ec2eb6ab2dcd19617cba8edc72dbfffb7902726e81c18acd355a program@3c88c73dd9c7fe23f4ae61c620a4dd0e7521b81d6c1f1350b3b19255f670f6dd",
+  "pricing_rev": "34d1007cd9dd19a1d751a8b87e79e95c181a94b3e791b1a546de6dac11435dbe",
+  "protocol": "agent-fun/program/v1",
+  "files": [
+    {
+      "path": "RULES.txt",
+      "sha256": "308f877b13e5360d6b14cdd476da5db427aa4101f35917a4805b53c510d8b453",
+      "size": 72029
+    },
+    {
+      "path": "baselines/plain-vm/LICENSE",
+      "sha256": "e3b276fea38dd0896be15e76449046e9f6730ba2299f3149f478aa156d5c5cc4",
+      "size": 1065
+    },
+    {
+      "path": "baselines/plain-vm/NOTICE",
+      "sha256": "1f09d85cb9a38a700cba49ee2467d5e2094e6d5f02e9a9f076a11f23559dd6f2",
+      "size": 238
+    },
+    {
+      "path": "baselines/plain-vm/main.ts",
+      "sha256": "37e0fcedb4c04387d9edfa1f5257d2273c003ba3268e7f1ff52a6497c4d82ed3",
+      "size": 4325
+    },
+    {
+      "path": "cli/makefun.mjs",
+      "sha256": "4ce2e4afdd22ba3f0a465ba941771cc5c5110d4dd77b1ef479df01769f8df1ce",
+      "size": 17159124
+    },
+    {
+      "path": "cli/site.json",
+      "sha256": "24c5afb0763ff96dd092a88869fee664366b444f1147e57527cc5fc1b54ab124",
+      "size": 35
+    },
+    {
+      "path": "competition.yaml",
+      "sha256": "7d2ccb816d3d7347a06ec921123f5dc681fffd627ab4ebade2566201dbe0e78b",
+      "size": 24847
+    },
+    {
+      "path": "harness/CODE.sha256",
+      "sha256": "eba374f5df25caa25497a202084fea33da010e1b7f1522868bef88dcb0f68309",
+      "size": 20688
+    },
+    {
+      "path": "harness/SOURCES.sha256",
+      "sha256": "a1eda08964b94228fa7df94ccce03a26e05035ced10710ee0b10d7d84988316a",
+      "size": 20688
+    },
+    {
+      "path": "harness/harness-src.tar.gz",
+      "sha256": "89982f05ae36678d087f437c3798594625256332901e20151fc285556b366b6f",
+      "size": 3051870
+    },
+    {
+      "path": "harness/harness-src.tar.gz.sha256",
+      "sha256": "1ef4c4de7c92dfc9e30a1f6408bcf473cd35c03b7fb36a199f206cfc4eecd07c",
+      "size": 85
+    },
+    {
+      "path": "practice/input/i001/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i001/program.bin",
+      "sha256": "0528bd31275f8decc42ab69ff0442bf9d7d98ba5d885437646cc361401dd20d0",
+      "size": 100
+    },
+    {
+      "path": "practice/input/i002/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i002/program.bin",
+      "sha256": "b64bbcfff02e8dbc36271c6104d9fa293dfacccc06c954f4d2a12e1a54a4359d",
+      "size": 59
+    },
+    {
+      "path": "practice/input/i003/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i003/program.bin",
+      "sha256": "ab54d3e8869a0dbb0868e883da9ef1288a40388afdb102e62f3d7f9b1e0f899d",
+      "size": 660
+    },
+    {
+      "path": "practice/input/i004/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i004/program.bin",
+      "sha256": "cb9f605a7f615d8b51f15ce8473e9cd2d5de18dd4397159f938d2a5331139c40",
+      "size": 66
+    },
+    {
+      "path": "practice/input/i005/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i005/program.bin",
+      "sha256": "845bf5fdfab596ab55ec1371eeb0c514b1fd32ccc48b850a20b56c09268d488b",
+      "size": 328
+    },
+    {
+      "path": "practice/input/i006/input.bin",
+      "sha256": "5953af195610b281c75b98d8d8eb7bc0152cc5fba3821b57059440c5ab5e108c",
+      "size": 189
+    },
+    {
+      "path": "practice/input/i006/program.bin",
+      "sha256": "53c24a49c70303d8578dae9a202ff9a58c9d6826554279bc765b4647e62377e6",
+      "size": 53
+    },
+    {
+      "path": "practice/input/i007/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i007/program.bin",
+      "sha256": "b147b9a6408b6273862bddeca279f23f312a5ceeb4a5ae145dbc794a30d43cfe",
+      "size": 104
+    },
+    {
+      "path": "practice/input/i008/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i008/program.bin",
+      "sha256": "e61dfd4ccd59f2aea724876f677dd2ebb8c181a6800cbaa921d3a1c21a940e1f",
+      "size": 197
+    },
+    {
+      "path": "practice/input/i009/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i009/program.bin",
+      "sha256": "2193239e596f8dcd7297de0cc875dd56ba12d45f5ad8124ae6d23fec3d335f21",
+      "size": 166
+    },
+    {
+      "path": "practice/input/i010/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i010/program.bin",
+      "sha256": "8bfa7d12de0bf1bf81cdc54e3bb71c0d89353e5c888c44bd05c9a7582c31e173",
+      "size": 56
+    },
+    {
+      "path": "practice/input/i011/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i011/program.bin",
+      "sha256": "b734b380da311f4aad7d6bb3c5bbb97875ebf4c50e3879b98b9fcf836b68ec19",
+      "size": 474
+    },
+    {
+      "path": "practice/input/i012/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i012/program.bin",
+      "sha256": "aed71785f211b97ce3b638ddf6a29f3f079cee5e5c368c16c56ad6586f82e134",
+      "size": 100
+    },
+    {
+      "path": "practice/input/i013/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i013/program.bin",
+      "sha256": "a9ae5fbd088ee210bb24e23e63ff5bfe6b64983968eba99dedd844d3bfca50c5",
+      "size": 285
+    },
+    {
+      "path": "practice/input/i014/input.bin",
+      "sha256": "9eac617bbf21ae34614e055076c604a2fe9aca03e89ced38a247279743d462c1",
+      "size": 94
+    },
+    {
+      "path": "practice/input/i014/program.bin",
+      "sha256": "53c24a49c70303d8578dae9a202ff9a58c9d6826554279bc765b4647e62377e6",
+      "size": 53
+    },
+    {
+      "path": "practice/input/i015/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i015/program.bin",
+      "sha256": "a3fb16468a8d03dc0743a6d7bec0d4c287734617886f119a0901d38983dd4b83",
+      "size": 104
+    },
+    {
+      "path": "practice/input/i016/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i016/program.bin",
+      "sha256": "9b8cf14e54749ea1fcd37272b4f2f7afdab070b19d168ba06a8876c001974bc2",
+      "size": 197
+    },
+    {
+      "path": "practice/input/i017/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i017/program.bin",
+      "sha256": "9322a6be329e421e2cab74f061e0fe42e79a0666913d847ccaf90281ac1c9b48",
+      "size": 174
+    },
+    {
+      "path": "practice/input/i018/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i018/program.bin",
+      "sha256": "6d4d06476cfa5b4fbee94bca8ed8916f313d77e425aec097847efa5392fd88ec",
+      "size": 59
+    },
+    {
+      "path": "practice/input/i019/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i019/program.bin",
+      "sha256": "500242ceae7fd7db091f2c068facc220f7a4b93ebc16f2a171666b9cfa9f796f",
+      "size": 381
+    },
+    {
+      "path": "practice/input/i020/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i020/program.bin",
+      "sha256": "7515e06ca366f3abe2b0813c55de4a137f863ac1d5d883e1ded2dbb5a5226543",
+      "size": 98
+    },
+    {
+      "path": "practice/input/i021/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i021/program.bin",
+      "sha256": "4940a70638b154e41d5b0d8a38566c0305f5735b00fdb5e83f37bf3788513906",
+      "size": 379
+    },
+    {
+      "path": "practice/input/i022/input.bin",
+      "sha256": "39837e3338e03a4f944a9ed0c516fcec75c46b9a91c882bc4bb6560125b6e940",
+      "size": 191
+    },
+    {
+      "path": "practice/input/i022/program.bin",
+      "sha256": "9f26c8a9b831d6e5a5c0af6d0e117978f31d21ca7e1c53d76d3c007c75ff855c",
+      "size": 49
+    },
+    {
+      "path": "practice/input/i023/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i023/program.bin",
+      "sha256": "df3d3c7b30769d76a26a51d14160b71669449469e8415cfe1506946fd83b6612",
+      "size": 101
+    },
+    {
+      "path": "practice/input/i024/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i024/program.bin",
+      "sha256": "9e300559c85c32051d9a59b0b5cd903e9f7646119dc254063877408a37781179",
+      "size": 385
+    },
+    {
+      "path": "practice/input/i025/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i025/program.bin",
+      "sha256": "8899ee62adf9d16aa25f1a3c4e64b05274784c2b749fd31994e7aba314e738c0",
+      "size": 196
+    },
+    {
+      "path": "practice/input/i026/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i026/program.bin",
+      "sha256": "eff73f03a797202f3b77537914a3496615a65bddc2e390187d6f89e09804c874",
+      "size": 59
+    },
+    {
+      "path": "practice/input/i027/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i027/program.bin",
+      "sha256": "55426dab46353d7416aa966a5223f7776bb606e5672afbac44d5f3460ed4b0c0",
+      "size": 78
+    },
+    {
+      "path": "practice/input/i028/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i028/program.bin",
+      "sha256": "bf96ec96bbc8c9aa2a21eaa0bb72e55cb1249719f6c11a42123994775b5bdd77",
+      "size": 56
+    },
+    {
+      "path": "practice/input/i029/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i029/program.bin",
+      "sha256": "dc716a5c900690a1066a149a5485c01975f6e32077c067b4ad63d1f75bb4f6d2",
+      "size": 132
+    },
+    {
+      "path": "practice/input/i030/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i030/program.bin",
+      "sha256": "3883c2c1e7fb46b164e51ccd468394e0e2b36e22982e7415c331b6205e9fb11b",
+      "size": 100
+    },
+    {
+      "path": "practice/input/i031/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i031/program.bin",
+      "sha256": "6ed81df441b42207bc0aae252cf5dc7a9cff46762e3d43398a3bd6607c3e88ec",
+      "size": 106
+    },
+    {
+      "path": "practice/input/i032/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i032/program.bin",
+      "sha256": "fe83a170ef8c4ec085b759f38bba609e22ec6a39005c148c2214b54c6473c80e",
+      "size": 27
+    },
+    {
+      "path": "practice/input/i033/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i033/program.bin",
+      "sha256": "09573c5db5b87ec45f96f6775d7a54264957cf7d836a6d3338e937235e221f05",
+      "size": 36
+    },
+    {
+      "path": "practice/input/i034/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i034/program.bin",
+      "sha256": "9ed9c3cf011bc67c114daefd70e459e1d5314506e6c1541471de5291ac657a43",
+      "size": 61
+    },
+    {
+      "path": "practice/input/i035/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i035/program.bin",
+      "sha256": "b26e1725c50891a203322f9e977edb86300f71255a0811894e70043bde1f794a",
+      "size": 72
+    },
+    {
+      "path": "practice/input/i036/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i036/program.bin",
+      "sha256": "69ec534af5f4c4b2b27639831818a8773fb95c65d4f680962e37086895cf2697",
+      "size": 71
+    },
+    {
+      "path": "practice/input/i037/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i037/program.bin",
+      "sha256": "9d3f5ec8e6d65d10a0aeb441dc8da5119b5544919e75e9c4edc45b63192a4968",
+      "size": 70
+    },
+    {
+      "path": "practice/input/i038/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i038/program.bin",
+      "sha256": "b4037763b23bd9c1eea7fd5cf70077d2f823aa79ecb64d507ddab8f412877473",
+      "size": 36
+    },
+    {
+      "path": "practice/input/i039/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i039/program.bin",
+      "sha256": "c124c885e5818fa7c4c7019d28da1b8fee1b5a131ec5411f633e71a1a73e7239",
+      "size": 102
+    },
+    {
+      "path": "practice/input/i040/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/input/i040/program.bin",
+      "sha256": "bcd3d5ecd8292d2ddbee780483c5438f0173b1ac6353f6a14aaa9c13fb62fff7",
+      "size": 18
+    },
+    {
+      "path": "practice/reference/i001/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i001/program.bin",
+      "sha256": "0528bd31275f8decc42ab69ff0442bf9d7d98ba5d885437646cc361401dd20d0",
+      "size": 100
+    },
+    {
+      "path": "practice/reference/i002/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i002/program.bin",
+      "sha256": "b64bbcfff02e8dbc36271c6104d9fa293dfacccc06c954f4d2a12e1a54a4359d",
+      "size": 59
+    },
+    {
+      "path": "practice/reference/i003/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i003/program.bin",
+      "sha256": "ab54d3e8869a0dbb0868e883da9ef1288a40388afdb102e62f3d7f9b1e0f899d",
+      "size": 660
+    },
+    {
+      "path": "practice/reference/i004/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i004/program.bin",
+      "sha256": "cb9f605a7f615d8b51f15ce8473e9cd2d5de18dd4397159f938d2a5331139c40",
+      "size": 66
+    },
+    {
+      "path": "practice/reference/i005/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i005/program.bin",
+      "sha256": "845bf5fdfab596ab55ec1371eeb0c514b1fd32ccc48b850a20b56c09268d488b",
+      "size": 328
+    },
+    {
+      "path": "practice/reference/i006/input.bin",
+      "sha256": "5953af195610b281c75b98d8d8eb7bc0152cc5fba3821b57059440c5ab5e108c",
+      "size": 189
+    },
+    {
+      "path": "practice/reference/i006/program.bin",
+      "sha256": "53c24a49c70303d8578dae9a202ff9a58c9d6826554279bc765b4647e62377e6",
+      "size": 53
+    },
+    {
+      "path": "practice/reference/i007/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i007/program.bin",
+      "sha256": "b147b9a6408b6273862bddeca279f23f312a5ceeb4a5ae145dbc794a30d43cfe",
+      "size": 104
+    },
+    {
+      "path": "practice/reference/i008/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i008/program.bin",
+      "sha256": "e61dfd4ccd59f2aea724876f677dd2ebb8c181a6800cbaa921d3a1c21a940e1f",
+      "size": 197
+    },
+    {
+      "path": "practice/reference/i009/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i009/program.bin",
+      "sha256": "2193239e596f8dcd7297de0cc875dd56ba12d45f5ad8124ae6d23fec3d335f21",
+      "size": 166
+    },
+    {
+      "path": "practice/reference/i010/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i010/program.bin",
+      "sha256": "8bfa7d12de0bf1bf81cdc54e3bb71c0d89353e5c888c44bd05c9a7582c31e173",
+      "size": 56
+    },
+    {
+      "path": "practice/reference/i011/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i011/program.bin",
+      "sha256": "b734b380da311f4aad7d6bb3c5bbb97875ebf4c50e3879b98b9fcf836b68ec19",
+      "size": 474
+    },
+    {
+      "path": "practice/reference/i012/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i012/program.bin",
+      "sha256": "aed71785f211b97ce3b638ddf6a29f3f079cee5e5c368c16c56ad6586f82e134",
+      "size": 100
+    },
+    {
+      "path": "practice/reference/i013/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i013/program.bin",
+      "sha256": "a9ae5fbd088ee210bb24e23e63ff5bfe6b64983968eba99dedd844d3bfca50c5",
+      "size": 285
+    },
+    {
+      "path": "practice/reference/i014/input.bin",
+      "sha256": "9eac617bbf21ae34614e055076c604a2fe9aca03e89ced38a247279743d462c1",
+      "size": 94
+    },
+    {
+      "path": "practice/reference/i014/program.bin",
+      "sha256": "53c24a49c70303d8578dae9a202ff9a58c9d6826554279bc765b4647e62377e6",
+      "size": 53
+    },
+    {
+      "path": "practice/reference/i015/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i015/program.bin",
+      "sha256": "a3fb16468a8d03dc0743a6d7bec0d4c287734617886f119a0901d38983dd4b83",
+      "size": 104
+    },
+    {
+      "path": "practice/reference/i016/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i016/program.bin",
+      "sha256": "9b8cf14e54749ea1fcd37272b4f2f7afdab070b19d168ba06a8876c001974bc2",
+      "size": 197
+    },
+    {
+      "path": "practice/reference/i017/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i017/program.bin",
+      "sha256": "9322a6be329e421e2cab74f061e0fe42e79a0666913d847ccaf90281ac1c9b48",
+      "size": 174
+    },
+    {
+      "path": "practice/reference/i018/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i018/program.bin",
+      "sha256": "6d4d06476cfa5b4fbee94bca8ed8916f313d77e425aec097847efa5392fd88ec",
+      "size": 59
+    },
+    {
+      "path": "practice/reference/i019/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i019/program.bin",
+      "sha256": "500242ceae7fd7db091f2c068facc220f7a4b93ebc16f2a171666b9cfa9f796f",
+      "size": 381
+    },
+    {
+      "path": "practice/reference/i020/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i020/program.bin",
+      "sha256": "7515e06ca366f3abe2b0813c55de4a137f863ac1d5d883e1ded2dbb5a5226543",
+      "size": 98
+    },
+    {
+      "path": "practice/reference/i021/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i021/program.bin",
+      "sha256": "4940a70638b154e41d5b0d8a38566c0305f5735b00fdb5e83f37bf3788513906",
+      "size": 379
+    },
+    {
+      "path": "practice/reference/i022/input.bin",
+      "sha256": "39837e3338e03a4f944a9ed0c516fcec75c46b9a91c882bc4bb6560125b6e940",
+      "size": 191
+    },
+    {
+      "path": "practice/reference/i022/program.bin",
+      "sha256": "9f26c8a9b831d6e5a5c0af6d0e117978f31d21ca7e1c53d76d3c007c75ff855c",
+      "size": 49
+    },
+    {
+      "path": "practice/reference/i023/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i023/program.bin",
+      "sha256": "df3d3c7b30769d76a26a51d14160b71669449469e8415cfe1506946fd83b6612",
+      "size": 101
+    },
+    {
+      "path": "practice/reference/i024/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i024/program.bin",
+      "sha256": "9e300559c85c32051d9a59b0b5cd903e9f7646119dc254063877408a37781179",
+      "size": 385
+    },
+    {
+      "path": "practice/reference/i025/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i025/program.bin",
+      "sha256": "8899ee62adf9d16aa25f1a3c4e64b05274784c2b749fd31994e7aba314e738c0",
+      "size": 196
+    },
+    {
+      "path": "practice/reference/i026/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i026/program.bin",
+      "sha256": "eff73f03a797202f3b77537914a3496615a65bddc2e390187d6f89e09804c874",
+      "size": 59
+    },
+    {
+      "path": "practice/reference/i027/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i027/program.bin",
+      "sha256": "55426dab46353d7416aa966a5223f7776bb606e5672afbac44d5f3460ed4b0c0",
+      "size": 78
+    },
+    {
+      "path": "practice/reference/i028/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i028/program.bin",
+      "sha256": "bf96ec96bbc8c9aa2a21eaa0bb72e55cb1249719f6c11a42123994775b5bdd77",
+      "size": 56
+    },
+    {
+      "path": "practice/reference/i029/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i029/program.bin",
+      "sha256": "dc716a5c900690a1066a149a5485c01975f6e32077c067b4ad63d1f75bb4f6d2",
+      "size": 132
+    },
+    {
+      "path": "practice/reference/i030/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i030/program.bin",
+      "sha256": "3883c2c1e7fb46b164e51ccd468394e0e2b36e22982e7415c331b6205e9fb11b",
+      "size": 100
+    },
+    {
+      "path": "practice/reference/i031/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i031/program.bin",
+      "sha256": "6ed81df441b42207bc0aae252cf5dc7a9cff46762e3d43398a3bd6607c3e88ec",
+      "size": 106
+    },
+    {
+      "path": "practice/reference/i032/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i032/program.bin",
+      "sha256": "fe83a170ef8c4ec085b759f38bba609e22ec6a39005c148c2214b54c6473c80e",
+      "size": 27
+    },
+    {
+      "path": "practice/reference/i033/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i033/program.bin",
+      "sha256": "09573c5db5b87ec45f96f6775d7a54264957cf7d836a6d3338e937235e221f05",
+      "size": 36
+    },
+    {
+      "path": "practice/reference/i034/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i034/program.bin",
+      "sha256": "9ed9c3cf011bc67c114daefd70e459e1d5314506e6c1541471de5291ac657a43",
+      "size": 61
+    },
+    {
+      "path": "practice/reference/i035/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i035/program.bin",
+      "sha256": "b26e1725c50891a203322f9e977edb86300f71255a0811894e70043bde1f794a",
+      "size": 72
+    },
+    {
+      "path": "practice/reference/i036/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i036/program.bin",
+      "sha256": "69ec534af5f4c4b2b27639831818a8773fb95c65d4f680962e37086895cf2697",
+      "size": 71
+    },
+    {
+      "path": "practice/reference/i037/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i037/program.bin",
+      "sha256": "9d3f5ec8e6d65d10a0aeb441dc8da5119b5544919e75e9c4edc45b63192a4968",
+      "size": 70
+    },
+    {
+      "path": "practice/reference/i038/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i038/program.bin",
+      "sha256": "b4037763b23bd9c1eea7fd5cf70077d2f823aa79ecb64d507ddab8f412877473",
+      "size": 36
+    },
+    {
+      "path": "practice/reference/i039/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i039/program.bin",
+      "sha256": "c124c885e5818fa7c4c7019d28da1b8fee1b5a131ec5411f633e71a1a73e7239",
+      "size": 102
+    },
+    {
+      "path": "practice/reference/i040/input.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "practice/reference/i040/program.bin",
+      "sha256": "bcd3d5ecd8292d2ddbee780483c5438f0173b1ac6353f6a14aaa9c13fb62fff7",
+      "size": 18
+    },
+    {
+      "path": "practice/reference/manifest.json",
+      "sha256": "873d4bf4cee114806228d4d2be2cc06d468c433204039cf61c29b0ced5a657b6",
+      "size": 103969
+    },
+    {
+      "path": "program/generator/draw.ts",
+      "sha256": "df5418ad24f9f491c2884cc5be46c336d05f96b8f8d2b9599977d45a81cbb567",
+      "size": 4734
+    },
+    {
+      "path": "program/generator/package.json",
+      "sha256": "3ca9d4afd21425087cf31893b8f9f63c81b0b8408db5e343ca76e5f8aa26ab9a",
+      "size": 23
+    },
+    {
+      "path": "program/generator/rng.ts",
+      "sha256": "356d9fa98661b2c30cd62627208a408723cce21bf19d0a9a7a72df7ef8df75e3",
+      "size": 3146
+    },
+    {
+      "path": "program/generator/subject/ISA.md",
+      "sha256": "6cfed184df19707576f9cab0a6516d99446a6edc4810a0532826ee250d27dbe6",
+      "size": 6494
+    },
+    {
+      "path": "program/generator/subject/asm.mjs",
+      "sha256": "d771c7d7587dbf856d5d990339d4183ad222291438abd0831d45089193ae27c5",
+      "size": 2982
+    },
+    {
+      "path": "program/generator/subject/generate.mjs",
+      "sha256": "a759d3f2db6c814e44409a9e87a37d4724c0640e712dcfb119144b08d0fdf719",
+      "size": 1952
+    },
+    {
+      "path": "program/generator/subject/programs.mjs",
+      "sha256": "b880a484a83a03d3ca9b580371f395f37fb15936bc95241eeb4e9afc65a99674",
+      "size": 17610
+    },
+    {
+      "path": "program/generator/subject/vm.mjs",
+      "sha256": "13563b658d3c98083cc88132b1d98979ce2c366c9812dd4b3b27503d417de9e9",
+      "size": 7751
+    },
+    {
+      "path": "program/scorer/checker/check.mjs",
+      "sha256": "eebecd312afb178f2f6fbd62dd34aaa18d8c7a729f15fb1cec06c32316bb6b31",
+      "size": 1563
+    },
+    {
+      "path": "program/scorer/package.json",
+      "sha256": "3ca9d4afd21425087cf31893b8f9f63c81b0b8408db5e343ca76e5f8aa26ab9a",
+      "size": 23
+    },
+    {
+      "path": "program/scorer/score.ts",
+      "sha256": "d9ad28f709e042db06e6eb88bb058292006631513ac349d469ffe0838340fc72",
+      "size": 8198
+    },
+    {
+      "path": "rules/instance.yaml",
+      "sha256": "8ee9e97a0b225af82460769049254f3a99b0d4ac235b1bfe242a80be814204d9",
+      "size": 1249
+    },
+    {
+      "path": "starter/LICENSE",
+      "sha256": "e3b276fea38dd0896be15e76449046e9f6730ba2299f3149f478aa156d5c5cc4",
+      "size": 1065
+    },
+    {
+      "path": "starter/main.ts",
+      "sha256": "65dfe2a0e5c8add3a3b001c142e0a6900a7fa50ce31948a2a4e0b478be39dce7",
+      "size": 806
+    }
+  ]
+}
